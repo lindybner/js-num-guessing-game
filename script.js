@@ -7,10 +7,10 @@ const msgPrompt = `Guess a number between 0 and 10 inclusive.`;
 const msgSuccess = `Good Work`;
 const msgFail = `Not matched`;
 
-let num = (num = Math.ceil(Math.random() * 10));
+let num = Math.ceil(Math.random() * 10);
 console.log(num);
 
-let guess = prompt(msgPrompt);
+let guess = parseInt(prompt(msgPrompt));
 
 if (guess === num) {
   alert(msgSuccess);
